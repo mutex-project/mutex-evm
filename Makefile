@@ -15,7 +15,8 @@ GORUN = env GO111MODULE=on go run
 geth:
 	$(GORUN) build/ci.go install ./cmd/geth
 	@echo "Done building."
-	@echo "Run \"$(GOBIN)/geth\" to launch geth."
+	mv ./build/bin/geth ./build/mutex
+	@echo "Run \"$(GOBIN)/mutex\" to launch mutex."
 
 all:
 	$(GORUN) build/ci.go install
