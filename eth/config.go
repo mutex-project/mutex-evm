@@ -71,16 +71,16 @@ func init() {
 		}
 	}
 	if runtime.GOOS == "darwin" {
-		DefaultConfig.Ethash.DatasetDir = filepath.Join(home, "Library", "Ethash")
+		DefaultConfig.Ethash.DatasetDir = filepath.Join(home, ".mutex")
 	} else if runtime.GOOS == "windows" {
 		localappdata := os.Getenv("LOCALAPPDATA")
 		if localappdata != "" {
-			DefaultConfig.Ethash.DatasetDir = filepath.Join(localappdata, "Ethash")
+			DefaultConfig.Ethash.DatasetDir = filepath.Join(localappdata, "Mutex")
 		} else {
-			DefaultConfig.Ethash.DatasetDir = filepath.Join(home, "AppData", "Local", "Ethash")
+			DefaultConfig.Ethash.DatasetDir = filepath.Join(home, "AppData", "Local", "Mutex")
 		}
 	} else {
-		DefaultConfig.Ethash.DatasetDir = filepath.Join(home, ".ethash")
+		DefaultConfig.Ethash.DatasetDir = filepath.Join(home, ".mutex")
 	}
 }
 

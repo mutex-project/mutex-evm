@@ -29,7 +29,7 @@ import (
 // MainnetGenesis returns the JSON spec to use for the main Ethereum network. It
 // is actually empty since that defaults to the hard coded binary genesis block.
 func MainnetGenesis() string {
-	return "0x743f1dfddab15d1a7a4a5c2c8ac25a23c540fe8bbbdde5231b0704be063b2c72"
+	return "0x5e1fc79cb4ffa4739177b5408045cd5d51c6cf766133f23f7cd72ee1f8d790e0"
 }
 
 // TestnetGenesis returns the JSON spec to use for the Ethereum test network.
