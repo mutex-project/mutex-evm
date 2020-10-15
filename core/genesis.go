@@ -340,7 +340,7 @@ func DefaultGenesisBlock() *Genesis {
 	return &Genesis{
 		Config:     params.MainnetChainConfig,
 		Nonce:      42,
-		ExtraData:  hexutil.MustDecode("0x7dc256329dcc987af1aab294c2b559927e519ecf01c9278f514549fa1639a735"),
+		ExtraData:  hexutil.MustDecode("0x5e1fc79cb4ffa4739177b5408045cd5d51c6cf766133f23f7cd72ee1f8d790e0"),
 		GasLimit:   5000,
 		Difficulty: big.NewInt(1),
 		Alloc:      decodePrealloc(mainnetAllocData),
